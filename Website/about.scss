@@ -1,0 +1,90 @@
+body{
+
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background: url("lib/bryan-goff-f7YQo-eYHdM-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden
+
+}
+
+.navbar{
+
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 60px;
+    border-bottom: 1px solid white;
+    // display: none;
+    
+}
+
+.logo{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 200px;
+
+    span{
+
+        color: white;
+        font-weight: bold;
+        font-style: italic;
+        letter-spacing: 1px;
+        
+    }
+
+}
+
+.menu{
+
+    height: 100%;
+    position: relative;
+    top: -100%;
+
+    ul{
+
+        float: right;
+
+        li{
+
+            color: white;
+            list-style: none;
+            display: inline-block;
+            margin-right: 20px;
+            text-transform: capitalize;
+            font-weight: bold;
+            font-style: italic; 
+
+        }
+
+        input{
+
+            color: white;
+            background: none;
+            border: 1px solid grey;
+            text-transform: capitalize;
+            font-size: 10px;
+            padding: 6px;
+            opacity: 0.6;
+            margin-right: 20px;
+            margin-left: 20px;
+            cursor: pointer;
+            transition: all 1s ease-in-out;
+
+            &:hover{
+
+                opacity: 1;
+                font-size: 13px;
+
+            }
+
+        }
+    }
+}
