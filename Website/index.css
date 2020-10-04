@@ -10,12 +10,17 @@ body {
   overflow: hidden;
 }
 
-.navbar {
+#navbar {
   position: relative;
   top: 0;
-  left: 0;
+  left: 0%;
   height: 60px;
   border-bottom: 1px solid white;
+  display: none;
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .logo {
@@ -57,6 +62,11 @@ body {
   text-transform: capitalize;
   font-weight: bold;
   font-style: italic;
+  cursor: pointer;
+}
+
+.menu ul li:hover {
+  text-decoration: underline;
 }
 
 .menu ul input {
@@ -79,7 +89,7 @@ body {
   font-size: 13px;
 }
 
-.s_animation {
+#s_animation {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -87,7 +97,7 @@ body {
           transform: translate(-50%, -50%);
 }
 
-.s_animation span {
+#s_animation span {
   color: white;
   font-size: 30px;
   text-align: center;
@@ -95,10 +105,10 @@ body {
   font-style: italic;
   -webkit-transition: 1s all ease-in-out;
   transition: 1s all ease-in-out;
+  text-transform: capitalize;
   letter-spacing: 5px;
   -webkit-animation: text 3s 1;
           animation: text 3s 1;
-  display: none;
 }
 
 .arrow {
@@ -111,7 +121,6 @@ body {
   color: white;
   font-size: 20px;
   opacity: 0.6;
-  display: none;
   cursor: pointer;
   -webkit-animation: arrow 3s 1;
           animation: arrow 3s 1;
@@ -127,25 +136,64 @@ i {
   color: white;
 }
 
-.story {
+#story {
   position: relative;
-  border: 1px solid white;
   width: 100%;
   height: 80%;
+  display: none;
+  -webkit-animation: none;
+          animation: none;
 }
 
 .text {
   position: relative;
   top: 18%;
-  width: 80%;
+  width: 100%;
   height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .text p {
   font-size: 18px;
   color: white;
   text-align: left;
-  margin-left: 20px;
+  margin-left: 60px;
+}
+
+.text img {
+  height: 300px;
+  width: 300px;
+  margin-left: 30px;
+  margin-right: 50px;
+}
+
+#b1 {
+  color: white;
+  background: #3498db;
+  border: none;
+  position: relative;
+  padding: 8px;
+  left: 65%;
+  cursor: pointer;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#b1:hover {
+  color: black;
+  background: white;
+}
+
+#t1 {
+  color: white;
+  position: relative;
+  left: 60%;
+  font-style: italic;
+  margin: 10px;
 }
 
 @-webkit-keyframes arrow {
@@ -205,6 +253,42 @@ i {
     opacity: 1;
     letter-spacing: 5px;
     font-size: 30px;
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes slide {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@-webkit-keyframes slide_2 {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes slide_2 {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
   }
 }
 /*# sourceMappingURL=index.css.map */

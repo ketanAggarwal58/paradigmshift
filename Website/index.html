@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <div class="navbar">
+    <div id="navbar">
 
         <div class="logo">
 
@@ -21,7 +21,7 @@
 
             <ul>
                 <!-- <li>NASA</li> -->
-                <li>about</li>
+                <li id = "l1">about</li>
                 <input type = "button" value = "download">
 
             </ul>
@@ -30,7 +30,7 @@
 
     </div>
 
-    <div class="s_animation">
+    <div id="s_animation">
 
         <span>Nasa space app</span>
 
@@ -38,23 +38,47 @@
 
     <div class="arrow">
 
-        <i class="fas fa-arrow-right"></i>
+        <i id = "right" class="fas fa-arrow-right"></i>
 
     </div>
 
-    <div class="story">
+    <div id="story">
 
         <div class="text">
         
-            <p>Kalpana Chawla was an Indian-American astronaut, engineer, and the first woman of Indian origin to go to space.<br> She first flew on Space Shuttle Columbia in 1997 as a mission specialist and primary robotic arm operator. In 2003,<br> Chawla was one of the seven crew members who died in the Space Shuttle Columbia Disaster when the spacecraft <br>disintegrated during its re-entry into the Earth's atmosphere. Chawla was posthumously awarded the Congressional<br> Space Medal of Honor , and several streets, universities, and institutions have been named in her honor. She is <br>regarded as a national hero in India.</p>
+            <img src="lib/cWogur9gYQBpna5HJfXMrV.jpg" alt="kalpana chawala">
 
-            <img src="" alt="kalpana chawala">
+            <p>Kalpana Chawla was an Indian-American astronaut, engineer, and the first woman of Indian origin to go to space. She first flew on Space Shuttle Columbia in 1997 as a mission specialist and primary robotic arm operator. In 2003, Chawla was one of the seven crew members who died in the Space Shuttle Columbia Disaster when the spacecraft disintegrated during its re-entry into the Earth's atmosphere. Chawla was posthumously awarded the Congressional Space Medal of Honor , and several streets, universities, and institutions have been named in her honor. She is regarded as a national hero in India.</p>
         
         </div>
 
+        <span id = "t1">GitHub link for android Application <i class="fas fa-arrow-circle-right"></i></span>
+
+        <button id = "b1">Download</button>
+
     </div>
 
-    <i class="fab fa-github"></i>
+    <script>
+
+
+        document.getElementById("l1").onclick = function(){
+
+            window.location.href = "about.html";
+
+        };
+
+        document.getElementById("right").onclick = function(){
+
+            document.getElementById("s_animation").style.display = "none";
+            document.getElementById("right").style.display = "none";
+            document.getElementById("navbar").style.display = "block";
+            document.getElementById("navbar").style.animation = "slide 2s 1"
+            document.getElementById("story").style.display = "block";
+            document.getElementById("story").style.animation = "slide 2s 1"
+            
+        };
+
+    </script>
 
 </body>
 </html>
