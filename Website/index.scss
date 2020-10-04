@@ -38,6 +38,7 @@ body{
         color: white;
         font-weight: bold;
         font-style: italic;
+        text-transform: capitalize;
         letter-spacing: 1px;
         
     }
@@ -217,7 +218,7 @@ i{
     left: 60%;
     font-style: italic;
     margin: 10px;
-    
+
 }
 
 @keyframes arrow{
