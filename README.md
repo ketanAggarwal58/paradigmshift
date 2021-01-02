@@ -6,7 +6,7 @@ A flutter based AR Application
 
 This application i and my team build it together for the NASA Spcae App Challenge
 
-## team members
+## Team Members
 
 1. Ketan Aggarwal
 2. Aditya Thakur
